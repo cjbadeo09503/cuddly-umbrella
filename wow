@@ -1,0 +1,6 @@
+local args = {
+    [1] = "Smash",
+    [2] = workspace:WaitForChild("Game"):WaitForChild("Zones"):WaitForChild("Zone1"):WaitForChild("Desks"):WaitForChild("Desk")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("_GAME"):WaitForChild("_MODULES"):WaitForChild("Utilities"):WaitForChild("NetworkUtility"):WaitForChild("Events"):WaitForChild("UpdateDesk"):FireServer(unpack(args))
